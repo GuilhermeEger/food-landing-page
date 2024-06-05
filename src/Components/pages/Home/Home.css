@@ -1,0 +1,31 @@
+.backgroundImage {
+    width: 100%;
+}
+
+.content {
+    margin: 120px;
+    margin-top: -50px;
+    display: flex
+}
+
+.clip {
+    position: relative;
+    overflow: hidden; /*** Overflow to hide anything out of the size of the box ***/
+    height: 130px;
+    width: 200px;
+    border: solid 1px #ccc;
+}
+.clip img {
+    position: relative; /*** position relative to place the img in center ***/
+    top: -50%;
+    left: -15%;
+ }
+
+ .Intro {
+    color: white;
+    position: absolute;
+    top: 180px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+ }

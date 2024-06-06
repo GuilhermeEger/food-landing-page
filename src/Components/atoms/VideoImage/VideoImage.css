@@ -1,0 +1,19 @@
+.mainContent {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image{
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}

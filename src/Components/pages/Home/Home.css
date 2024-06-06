@@ -61,24 +61,26 @@
    position: absolute;
     left: 50px;
     right: 50px;
-    background: white;
     top: 300px;
-    border: 1px solid;
     padding: 20px;
     display: flex;
     gap: 40px;
+    background: #222021ba;
+    box-shadow: 5px 5px 11px #222021;
+    border-radius: 5px;
  }
 
  .textImageWrap2 {
    position: absolute;
     left: 50px;
     right: 50px;
-    background: white;
-    top: 930px;
-    border: 1px solid;
+    top: 380px;
     padding: 20px;
     display: flex;
     gap: 40px;
+    background: #222021ba;
+    box-shadow: 5px 5px 11px #222021;
+    border-radius: 5px;
  }
 
  .imageRightText {
@@ -108,4 +110,5 @@
    "header header"
    "image1 image2"
    ;
+   gap: 10px;
  }

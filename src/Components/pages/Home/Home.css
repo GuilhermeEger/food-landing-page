@@ -2,25 +2,6 @@
     width: 100%;
 }
 
-.content {
-    margin: 120px;
-    margin-top: -50px;
-    display: flex
-}
-
-.clip {
-    position: relative;
-    overflow: hidden; /*** Overflow to hide anything out of the size of the box ***/
-    height: 130px;
-    width: 200px;
-    border: solid 1px #ccc;
-}
-.clip img {
-    position: relative; /*** position relative to place the img in center ***/
-    top: -50%;
-    left: -15%;
- }
-
  .Intro {
     color: white;
     position: absolute;
@@ -28,4 +9,103 @@
     width: 100%;
     left: 0;
     text-align: center;
+ }
+
+ .divider {
+    height: 500px;
+    background: #222021;
+    margin-top: -12px;
+    position: relative;
+    z-index: 2;
+ }
+
+ .imagesBox {
+   gap: 20px;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   left: 40px;
+   right: 40px;
+   height: auto;
+   transform: translateY(-50%);
+ }
+
+ .infoBox {
+    position: absolute;
+    height: 330px;
+    left: 50px;
+    right: 50px;
+    background: white;
+    bottom: 0;
+    transform: translateY(50%);
+    border: 1px solid;
+    padding: 20px
+ }
+
+ .textFloating {
+   width: 100%;
+   height: 500px;
+   background: #9C27B0;
+   padding: 20px;
+   min-width: 150px;
+ }
+
+ .textFloating2 {
+   background: #9C27B0;
+   padding: 20px;
+   grid-area: header
+ }
+
+
+ .textImageWrap {
+   position: absolute;
+    left: 50px;
+    right: 50px;
+    background: white;
+    top: 300px;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+ }
+
+ .textImageWrap2 {
+   position: absolute;
+    left: 50px;
+    right: 50px;
+    background: white;
+    top: 930px;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+ }
+
+ .imageRightText {
+   width: 60%;
+    background: #673AB7;
+    max-width: 500px;
+    margin-left: auto;
+ }
+
+ .leftImage {
+    width: 100%;
+    background: #673AB7;
+    grid-area: image1;
+ }
+
+ .rightImage {
+   width: 100%;
+   background: #673AB7;
+   grid-area: image2;
+}
+
+ .gridImagesText {
+   display: grid;
+   width: 100%;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: 
+   "header header"
+   "image1 image2"
+   ;
  }

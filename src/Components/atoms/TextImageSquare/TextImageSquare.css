@@ -1,0 +1,16 @@
+
+.littleContentBox {
+    position: relative;
+    margin: 10px;
+    background: white;
+    padding: 20px;
+ }
+
+ .image{
+    width: 100%;
+ }
+
+ .squareWrap {
+    flex: 1 1 40%;
+    max-width: 350px;
+ }

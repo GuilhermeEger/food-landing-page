@@ -96,19 +96,25 @@
     grid-area: image1;
  }
 
- .rightImage {
+ .middleImage {
    width: 100%;
    background: #673AB7;
    grid-area: image2;
+ }
+
+ .rightImage {
+   width: 100%;
+   background: #673AB7;
+   grid-area: image3;
 }
 
  .gridImagesText {
    display: grid;
    width: 100%;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
    grid-template-areas: 
-   "header header"
-   "image1 image2"
+   "header header header"
+   "image1 image2 image3"
    ;
    gap: 10px;
  }

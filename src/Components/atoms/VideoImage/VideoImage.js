@@ -23,7 +23,7 @@ function VideoImage(props) {
           loop
         />
       ) : (
-        <img className="image" src={props.src} />
+        <img className="imageWithVideo" src={props.src} />
       )}
       <ButtonIcon
         icon={showVideo ? "pause" : "play"}

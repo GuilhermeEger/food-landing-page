@@ -33,14 +33,17 @@
 
 .infoBox {
   position: absolute;
-  height: 330px;
   left: 50px;
   right: 50px;
   background: white;
   bottom: 0;
   transform: translateY(50%);
-  border: 1px solid;
-  padding: 20px;
+  padding: 40px;
+  box-shadow: 1px 1px 5px white;
+}
+
+.infoBox p{
+  font-size: 20px;
 }
 
 .infoBox2 {
@@ -89,6 +92,7 @@
   box-shadow: 5px 5px 11px #222021;
   border-radius: 5px;
   min-height: 540px;
+  overflow: auto;
 }
 
 .imageRightText {
@@ -152,5 +156,40 @@
   font-weight: bold;
   cursor: pointer;
   text-decoration: underline;
+  font-size: 20px;
+}
+
+.endText{
+  position: absolute;
+  bottom: 0;
+}
+
+.endContent {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+  justify-content: center;
+}
+
+.endContentText {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.endVideoContent{
+  width: 100%;
+}
+
+.leftContent{
+  width: 50%;
+  max-width: 600px;
+  padding: 50px; 
+}
+
+.endVideoWrap{
+  width: 50%;
+  padding: 50px;
+  max-width: 550px; 
   font-size: 20px;
 }

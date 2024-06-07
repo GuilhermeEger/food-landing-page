@@ -1,14 +1,15 @@
 .mainContent {
-    width: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
+    min-width: 300px;
 }
 
-.image{
-    height: 100%;
+.imageWithVideo{
+    width: 100%;
+    min-height: 530px;
 }
 
 .button {

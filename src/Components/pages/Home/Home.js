@@ -109,7 +109,7 @@ function Home(props) {
 
           <div className="textImageWrap2">
             <div className="leftTextContent">
-              <h1>A site about japanese food</h1>
+              <h1>Sublime Simplicity: The Ritual of Sushi.</h1>
               <p>
                 <strong>Rice and Fillings:</strong> Spread rice and fillings,
                 creating a symphony of flavors that complement each other

@@ -10,8 +10,8 @@ function TextImageSquare(props) {
           <Image className="image" src={props.img} />
         </div>
         <div>
-          <h3>Comida</h3>
-          <p>testesteste teste</p>
+          <h3>{props.title}</h3>
+          <p>{props.text}</p>
         </div>
       </div>
     </div>

@@ -41,6 +41,19 @@
     border: 1px solid;
     padding: 20px
  }
+ 
+ 
+ .infoBox2 {
+  position: absolute;
+  height: 330px;
+  left: 50px;
+  right: 50px;
+  background: white;
+  top: 1090px;
+  transform: translateY(50%);
+  border: 1px solid;
+  padding: 20px
+}
 
  .textFloating {
    width: 100%;
@@ -117,4 +130,8 @@
    "image1 image2 image3"
    ;
    gap: 10px;
+ }
+
+ .ImageWrap .img {
+  width: 100px;
  }

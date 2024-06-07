@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Home.css";
 import Image from "../../atoms/Image/Image";
 import TextImageSquare from "../../atoms/TextImageSquare/TextImageSquare";
@@ -7,6 +7,10 @@ import imageMap from "../../../utils/imageMap";
 import VideoImage from "../../atoms/VideoImage/VideoImage";
 
 function Home(props) {
+
+  const [showVideos, setShowVideos] = useState(false);
+  const fishPreparationRef = useRef(null);
+  
   return (
     <div>
       <Image className="backgroundImage" src={imageMap["sushiBackground"]} />
@@ -15,6 +19,12 @@ function Home(props) {
       <div className="divider">
         <div className="imagesBox">
           <TextImageSquare
+            goToRef={() => {
+              
+              const { offsetTop } = fishPreparationRef.current
+              console.log(offsetTop);
+
+              window.scrollTo({top: offsetTop, behavior: "smooth"})}}
             title={"Fish Preparation"}
             text={"The Art of Cutting Tuna."}
             img={imageMap["atumWithKnife"]}
@@ -62,7 +72,7 @@ function Home(props) {
             <Image className="rightImage" src={imageMap["cuttinAtum2"]} />
           </div>
         </div>
-        <div className="infoBox2">
+        <div ref={fishPreparationRef} className="infoBox2">
           <h1>The Art of the Cut: Precision and Elegance in Handling Tuna</h1>
           <p>
             Fish preparation is where the true mastery of Japanese cuisine is
@@ -98,15 +108,19 @@ function Home(props) {
         />
 
         <div className="textImageWrap2">
+          <button onClick={() => setShowVideos(!showVideos)} style={{position:"absolute", top:0}}>Show me!</button>
           <VideoImage
+            showVideo={showVideos}
             src={imageMap["puttingRice"]}
             video={videoMap["puttingRice"]}
           />
           <VideoImage
+            showVideo={showVideos}
             src={imageMap["makingSushi"]}
             video={videoMap["rollingSushi"]}
           />
           <VideoImage
+            showVideo={showVideos}
             src={imageMap["puttingSalmon"]}
             video={videoMap["puttingSalmon"]}
           />

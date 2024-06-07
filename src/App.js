@@ -5,7 +5,6 @@ import Navbar from "../src/Components/molecules/Navbar/Navbar"
 function App() {
   return (
     <div className="App">
-      <Navbar />
       <Home />
     </div>
   );

@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./VideoImage.css";
+import ButtonIcon from "../../molecules/ButtonIcon/ButtonIcon";
 
 function VideoImage(props) {
   const [showVideo, setShowVideo] = useState(false);
@@ -8,14 +9,27 @@ function VideoImage(props) {
     setShowVideo(!showVideo);
   }
 
+  useEffect(() => {
+    setShowVideo(props.showVideo);
+  }, [props.showVideo]);
+
   return (
     <div className="mainContent">
-      {showVideo || props.showVideo ? (
-        <video style={{width:"100%"}} src={props.video} autoPlay={true} loop />
+      {showVideo ? (
+        <video
+          style={{ width: "100%" }}
+          src={props.video}
+          autoPlay={true}
+          loop
+        />
       ) : (
         <img className="image" src={props.src} />
       )}
-      <button className="button" onClick={() => changeView()}>aaa</button>
+      <ButtonIcon
+        icon={showVideo ? "pause" : "play"}
+        className="button"
+        onClick={() => changeView()}
+      />
     </div>
   );
 }

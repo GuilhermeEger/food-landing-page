@@ -1,137 +1,156 @@
 .backgroundImage {
-    width: 100%;
+  width: 100%;
 }
 
- .Intro {
-    color: white;
-    position: absolute;
-    top: 180px;
-    width: 100%;
-    left: 0;
-    text-align: center;
- }
+.Intro {
+  color: white;
+  position: absolute;
+  top: 180px;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  font-size: 60px;
+}
 
- .divider {
-    height: 500px;
-    background: #222021;
-    margin-top: -12px;
-    position: relative;
-    z-index: 2;
- }
+.divider {
+  height: 500px;
+  background: #1a1a1a;
+  margin-top: -12px;
+  position: relative;
+  z-index: 2;
+}
 
- .imagesBox {
-   gap: 20px;
-   display: flex;
-   justify-content: center;
-   position: absolute;
-   left: 40px;
-   right: 40px;
-   height: auto;
-   transform: translateY(-50%);
- }
+.imagesBox {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  height: auto;
+  transform: translateY(-50%);
+}
 
- .infoBox {
-    position: absolute;
-    height: 330px;
-    left: 50px;
-    right: 50px;
-    background: white;
-    bottom: 0;
-    transform: translateY(50%);
-    border: 1px solid;
-    padding: 20px
- }
- 
- 
- .infoBox2 {
+.infoBox {
   position: absolute;
   height: 330px;
   left: 50px;
   right: 50px;
   background: white;
-  top: 1090px;
+  bottom: 0;
   transform: translateY(50%);
   border: 1px solid;
-  padding: 20px
+  padding: 20px;
 }
 
- .textFloating {
-   width: 100%;
-   height: 500px;
-   background: #9C27B0;
-   padding: 20px;
-   min-width: 150px;
- }
-
- .textFloating2 {
-   background: #9C27B0;
-   padding: 20px;
-   grid-area: header
- }
-
-
- .textImageWrap {
-   position: absolute;
-    left: 50px;
-    right: 50px;
-    top: 300px;
-    padding: 20px;
-    display: flex;
-    gap: 40px;
-    background: #222021ba;
-    box-shadow: 5px 5px 11px #222021;
-    border-radius: 5px;
- }
-
- .textImageWrap2 {
-   position: absolute;
-    left: 50px;
-    right: 50px;
-    top: 380px;
-    padding: 20px;
-    display: flex;
-    gap: 40px;
-    background: #222021ba;
-    box-shadow: 5px 5px 11px #222021;
-    border-radius: 5px;
- }
-
- .imageRightText {
-   width: 60%;
-    background: #673AB7;
-    max-width: 500px;
-    margin-left: auto;
- }
-
- .leftImage {
-    width: 100%;
-    background: #673AB7;
-    grid-area: image1;
- }
-
- .middleImage {
-   width: 100%;
-   background: #673AB7;
-   grid-area: image2;
- }
-
- .rightImage {
-   width: 100%;
-   background: #673AB7;
-   grid-area: image3;
+.infoBox2 {
+  height: 330px;
+  padding: 20px;
+  color: white;
+  padding: 20px;
+  grid-area: content;
 }
 
- .gridImagesText {
-   display: grid;
-   width: 100%;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-template-areas: 
-   "header header header"
-   "image1 image2 image3"
-   ;
-   gap: 10px;
- }
+.textFloating {
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  min-width: 150px;
+}
 
- .ImageWrap .img {
+.textFloating2 {
+  padding: 20px;
+  grid-area: header;
+  color: white;
+}
+
+.textImageWrap {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 300px;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  background: #222021ba;
+  box-shadow: 5px 5px 11px #222021;
+  border-radius: 5px;
+}
+
+.textImageWrap2 {
+  position: absolute;
+  left: 50px;
+  right: 50px;
+  top: 380px;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  background: #222021ba;
+  box-shadow: 5px 5px 11px #222021;
+  border-radius: 5px;
+  min-height: 540px;
+}
+
+.imageRightText {
+  width: 60%;
+  background: #673ab7;
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.leftImage {
+  width: 100%;
+  background: #673ab7;
+  grid-area: image1;
+}
+
+.middleImage {
+  width: 100%;
+  background: #673ab7;
+  grid-area: image2;
+}
+
+.rightImage {
+  width: 100%;
+  background: #673ab7;
+  grid-area: image3;
+}
+
+.gridImagesText {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header"
+    "image1 image2 image3"
+    "content content content";
+  gap: 10px;
+}
+
+.ImageWrap .img {
   width: 100px;
- }
+}
+
+.infoBoxTitle {
+  color: white;
+  font-size: 40px;
+}
+
+.lowHeight {
+  height: 50px;
+}
+
+
+.leftTextContent {
+  color: white;
+  width: 20%;
+  min-width: 360px;
+  max-width: 400px;
+}
+
+.spanUnderline {
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 20px;
+}

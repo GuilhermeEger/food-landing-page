@@ -7,10 +7,9 @@ import imageMap from "../../../utils/imageMap";
 import VideoImage from "../../atoms/VideoImage/VideoImage";
 
 function Home(props) {
-
   const [showVideos, setShowVideos] = useState(false);
-  const fishPreparationRef = useRef(null);
-  
+
+
   return (
     <div>
       <Image className="backgroundImage" src={imageMap["sushiBackground"]} />
@@ -19,12 +18,6 @@ function Home(props) {
       <div className="divider">
         <div className="imagesBox">
           <TextImageSquare
-            goToRef={() => {
-              
-              const { offsetTop } = fishPreparationRef.current
-              console.log(offsetTop);
-
-              window.scrollTo({top: offsetTop, behavior: "smooth"})}}
             title={"Fish Preparation"}
             text={"The Art of Cutting Tuna."}
             img={imageMap["atumWithKnife"]}
@@ -63,30 +56,30 @@ function Home(props) {
         <div className="textImageWrap2">
           <div className="gridImagesText">
             <div className="textFloating2">
-              <h2>
+              <h2 className="infoBoxTitle">
                 The Art of the Cut: Precision and Elegance in Handling Tuna
               </h2>
+              <p>
+                Fish preparation is where the true mastery of Japanese cuisine
+                is unveiled. Every slice is a meticulous dance, a choreography
+                of precision and elegance. The knife glides smoothly, almost as
+                an extension of the chef's hand, revealing the beauty and
+                texture of the tuna with each movement.
+              </p>
+              <p>
+                This process is not just a technique; it is an art refined over
+                centuries, where respect for the ingredient is as important as
+                the chef's skill.
+              </p>
             </div>
             <Image className="leftImage" src={imageMap["atum"]} />
             <Image className="middleImage" src={imageMap["cuttinAtum1"]} />
             <Image className="rightImage" src={imageMap["cuttinAtum2"]} />
           </div>
         </div>
-        <div ref={fishPreparationRef} className="infoBox2">
-          <h1>The Art of the Cut: Precision and Elegance in Handling Tuna</h1>
-          <p>
-            Fish preparation is where the true mastery of Japanese cuisine is
-            unveiled. Every slice is a meticulous dance, a choreography of
-            precision and elegance. The knife glides smoothly, almost as an
-            extension of the chef's hand, revealing the beauty and texture of
-            the tuna with each movement. This process is not just a technique;
-            it is an art refined over centuries, where respect for the
-            ingredient is as important as the chef's skill.
-          </p>
-        </div>
       </div>
 
-      <div className="divider">
+      <div className="divider lowHeight">
         <div className="infoBox">
           <h1>Turning Simplicity into the Sublime: The Ritual of Sushi</h1>
           <p>
@@ -108,7 +101,33 @@ function Home(props) {
         />
 
         <div className="textImageWrap2">
-          <button onClick={() => setShowVideos(!showVideos)} style={{position:"absolute", top:0}}>Show me!</button>
+          <div className="leftTextContent">
+            <h1>A site about japanese food</h1>
+            <p>
+              <strong>Rice and Fillings:</strong> Spread rice and fillings,
+              creating a symphony of flavors that complement each other
+              perfectly.
+            </p>
+            <p>
+              <strong>Rolling:</strong> Roll tightly, breathing life into each
+              sushi with the precision of an artist and the passion of a master.
+            </p>
+            <p>
+              <strong>Salmon on Top:</strong> Add salmon, crowning your creation
+              with the refinement and sophistication of an impeccable finishing
+              touch.
+            </p>
+            <p>
+              Click{" "}
+              <span
+                onClick={() => setShowVideos(!showVideos)}
+                className="spanUnderline"
+              >
+                here
+              </span>{" "}
+              to see all the magic!
+            </p>
+          </div>
           <VideoImage
             showVideo={showVideos}
             src={imageMap["puttingRice"]}
@@ -126,14 +145,6 @@ function Home(props) {
           />
         </div>
       </div>
-
-      <div style={{ height: 500, width: "100%", background: "white" }}>
-        <div>
-          <video src={"gettinSushi"} loop autoPlay={true} />
-        </div>
-      </div>
-
-      <div style={{ height: 100, width: "100%", background: "#222021" }}></div>
     </div>
   );
 }

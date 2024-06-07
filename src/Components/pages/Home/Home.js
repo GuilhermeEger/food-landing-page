@@ -7,7 +7,6 @@ import imageMap from "../../../utils/imageMap";
 import VideoImage from "../../atoms/VideoImage/VideoImage";
 import gettingSushi from "../../../assets/GettinSushi3.mp4";
 
-
 function Home(props) {
   const [showVideos, setShowVideos] = useState(false);
 
@@ -127,14 +126,12 @@ function Home(props) {
                 finishing touch.
               </p>
               <p>
-                Click{" "}
-                <span
+                Click <span
                   onClick={() => setShowVideos(!showVideos)}
                   className="spanUnderline"
                 >
                   here
-                </span>{" "}
-                to see all the magic!
+                </span> to see all the magic!
               </p>
             </div>
             <VideoImage

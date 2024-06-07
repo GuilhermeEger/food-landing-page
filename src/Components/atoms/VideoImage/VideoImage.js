@@ -11,6 +11,7 @@ function VideoImage(props) {
 
   useEffect(() => {
     setShowVideo(props.showVideo);
+    console.log("props.showVideo",props.showVideo);
   }, [props.showVideo]);
 
   return (

@@ -5,11 +5,13 @@
     overflow: hidden;
     position: relative;
     min-width: 300px;
+    width: 100%;
 }
 
 .imageWithVideo{
     width: 100%;
     min-height: 530px;
+    height: 100%;
 }
 
 .button {

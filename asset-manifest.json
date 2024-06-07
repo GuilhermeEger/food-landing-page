@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/food-landing-page/static/css/main.b69c1793.css",
+    "main.js": "/food-landing-page/static/js/main.e654af46.js",
+    "static/media/puttingRice.mp4": "/food-landing-page/static/media/puttingRice.04951e89c6c89300d930.mp4",
+    "static/media/GettinSushi3.mp4": "/food-landing-page/static/media/GettinSushi3.6f2316bc4adb6be25507.mp4",
+    "static/media/rollingSushi.mp4": "/food-landing-page/static/media/rollingSushi.2042f3f4804d35912da1.mp4",
+    "static/media/puttinSalmon.mp4": "/food-landing-page/static/media/puttinSalmon.df1684dc6245a83b53a3.mp4",
+    "static/media/background3.jpg": "/food-landing-page/static/media/background3.7f965c6dba831f63c922.jpg",
+    "static/media/sushiTableBackground.jpg": "/food-landing-page/static/media/sushiTableBackground.9ead35022c496a24e865.jpg",
+    "static/media/finishedPoke.jpg": "/food-landing-page/static/media/finishedPoke.0b42152cf4544b6373ed.jpg",
+    "static/media/sushiTable.jpg": "/food-landing-page/static/media/sushiTable.d65f6989368c94d98bae.jpg",
+    "static/media/showinPlate.jpg": "/food-landing-page/static/media/showinPlate.05d1aaacc965bd6196e0.jpg",
+    "static/media/bowl.jpg": "/food-landing-page/static/media/bowl.6077e67da70e11334c97.jpg",
+    "static/media/showingPoke.jpg": "/food-landing-page/static/media/showingPoke.9e66116ce7ea168d0ea1.jpg",
+    "static/media/cuttinAtum1.jpg": "/food-landing-page/static/media/cuttinAtum1.c8999c1cfaffb23a73fc.jpg",
+    "static/media/shrimpPokeSouce.jpg": "/food-landing-page/static/media/shrimpPokeSouce.bf2ef8d1c511ca84b912.jpg",
+    "static/media/cuttinAtum2.jpg": "/food-landing-page/static/media/cuttinAtum2.eb592d7f4f6280f35877.jpg",
+    "static/media/atum3.jpg": "/food-landing-page/static/media/atum3.4cb1130142c85e97102b.jpg",
+    "static/media/atum1.jpg": "/food-landing-page/static/media/atum1.ab2d62712ae1ec7308a8.jpg",
+    "static/media/makingSushi.jpg": "/food-landing-page/static/media/makingSushi.b1912dbf0f3a52c66eed.jpg",
+    "static/media/puttingSalmon.jpg": "/food-landing-page/static/media/puttingSalmon.bdc361575ecdfa5bdb09.jpg",
+    "static/media/puttingRice.jpg": "/food-landing-page/static/media/puttingRice.0a61589a5c0aa4912407.jpg",
+    "static/media/puttingSalmonSquare.jpg": "/food-landing-page/static/media/puttingSalmonSquare.c9eb256ff35b71cf709a.jpg",
+    "index.html": "/food-landing-page/index.html",
+    "main.b69c1793.css.map": "/food-landing-page/static/css/main.b69c1793.css.map",
+    "main.e654af46.js.map": "/food-landing-page/static/js/main.e654af46.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b69c1793.css",
+    "static/js/main.e654af46.js"
+  ]
+}

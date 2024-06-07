@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/food-landing-page/static/css/main.b69c1793.css",
-    "main.js": "/food-landing-page/static/js/main.e654af46.js",
+    "main.js": "/food-landing-page/static/js/main.e6f6e78a.js",
     "static/media/puttingRice.mp4": "/food-landing-page/static/media/puttingRice.04951e89c6c89300d930.mp4",
     "static/media/GettinSushi3.mp4": "/food-landing-page/static/media/GettinSushi3.6f2316bc4adb6be25507.mp4",
     "static/media/rollingSushi.mp4": "/food-landing-page/static/media/rollingSushi.2042f3f4804d35912da1.mp4",
@@ -24,10 +24,10 @@
     "static/media/puttingSalmonSquare.jpg": "/food-landing-page/static/media/puttingSalmonSquare.c9eb256ff35b71cf709a.jpg",
     "index.html": "/food-landing-page/index.html",
     "main.b69c1793.css.map": "/food-landing-page/static/css/main.b69c1793.css.map",
-    "main.e654af46.js.map": "/food-landing-page/static/js/main.e654af46.js.map"
+    "main.e6f6e78a.js.map": "/food-landing-page/static/js/main.e6f6e78a.js.map"
   },
   "entrypoints": [
     "static/css/main.b69c1793.css",
-    "static/js/main.e654af46.js"
+    "static/js/main.e6f6e78a.js"
   ]
 }
